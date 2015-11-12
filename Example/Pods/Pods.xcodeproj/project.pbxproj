@@ -10,10 +10,18 @@
 		07318AC72A345988A8243BDBB43FD80E /* MSHelper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 15EA4A9AF52356E9C1D2EDD8F7050F3A /* MSHelper.bundle */; };
 		0D8943456C9A47176EEA089AEC4D4A37 /* MSHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BAC989FA8CFC287444457501D79E79 /* MSHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23E23EBD92863D1FCD8C88447C67050B /* Pods-MSHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F0D6DCEAF9C0EF4E27FF6B3AF59E35 /* Pods-MSHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3585DD80694CCAFCEC831FE8332631C0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08D36C88CE1D295C151166918082F8D /* ReplaceMe.swift */; };
 		3FB365A9DCB3A6E77E1AF64BE58C9174 /* Pods-MSHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4245EE180982E2D75D57E3F13319162C /* Pods-MSHelper_Tests-dummy.m */; };
 		57C13AF3DD18114E149E4021A78E2225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		76E1A9BB3B47D0C249CDDADC8679F81F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		9184957F1BF497D200D0243C /* NSIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918495761BF497D200D0243C /* NSIndexPath.swift */; };
+		918495801BF497D200D0243C /* NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918495771BF497D200D0243C /* NSRange.swift */; };
+		918495811BF497D200D0243C /* NSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918495781BF497D200D0243C /* NSTimer.swift */; };
+		918495821BF497D200D0243C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918495791BF497D200D0243C /* String.swift */; };
+		918495831BF497D200D0243C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957A1BF497D200D0243C /* UIImageView.swift */; };
+		918495841BF497D200D0243C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957B1BF497D200D0243C /* UILabel.swift */; };
+		918495851BF497D200D0243C /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957C1BF497D200D0243C /* UITextView.swift */; };
+		918495861BF497D200D0243C /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957D1BF497D200D0243C /* UIWindow.swift */; };
+		918495871BF497D200D0243C /* MSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957E1BF497D200D0243C /* MSHelper.swift */; };
 		EF8485B2D8BB9ACE132E029D8EA2B5E1 /* MSHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC951A5D9DC8336E10628C74AB3578E7 /* MSHelper-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -51,12 +59,20 @@
 		563F36943BDA72956C731294AC227ED4 /* MSHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MSHelper.modulemap; sourceTree = "<group>"; };
 		580F2A5ECD65B5B01BB876E46867F702 /* Pods-MSHelper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSHelper_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		819D908C2EF62367E8C5CA206D373103 /* MSHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSHelper-prefix.pch"; sourceTree = "<group>"; };
+		918495761BF497D200D0243C /* NSIndexPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSIndexPath.swift; sourceTree = "<group>"; };
+		918495771BF497D200D0243C /* NSRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRange.swift; sourceTree = "<group>"; };
+		918495781BF497D200D0243C /* NSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimer.swift; sourceTree = "<group>"; };
+		918495791BF497D200D0243C /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		9184957A1BF497D200D0243C /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		9184957B1BF497D200D0243C /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		9184957C1BF497D200D0243C /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		9184957D1BF497D200D0243C /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		9184957E1BF497D200D0243C /* MSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHelper.swift; sourceTree = "<group>"; };
 		AC951A5D9DC8336E10628C74AB3578E7 /* MSHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSHelper-dummy.m"; sourceTree = "<group>"; };
 		AF2B5BFD54A76D9042184823F90C8F48 /* Pods-MSHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4F0D6DCEAF9C0EF4E27FF6B3AF59E35 /* Pods-MSHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C9ED56D37C4682E965AABF51E3DC94AA /* Pods-MSHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MSHelper_Tests.modulemap"; sourceTree = "<group>"; };
-		D08D36C88CE1D295C151166918082F8D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +161,26 @@
 			);
 			sourceTree = "<group>";
 		};
+		918495751BF497D200D0243C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				918495761BF497D200D0243C /* NSIndexPath.swift */,
+				918495771BF497D200D0243C /* NSRange.swift */,
+				918495781BF497D200D0243C /* NSTimer.swift */,
+				918495791BF497D200D0243C /* String.swift */,
+				9184957A1BF497D200D0243C /* UIImageView.swift */,
+				9184957B1BF497D200D0243C /* UILabel.swift */,
+				9184957C1BF497D200D0243C /* UITextView.swift */,
+				9184957D1BF497D200D0243C /* UIWindow.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		AB34F264F692E81AF0604CE3F2297542 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D08D36C88CE1D295C151166918082F8D /* ReplaceMe.swift */,
+				918495751BF497D200D0243C /* Extension */,
+				9184957E1BF497D200D0243C /* MSHelper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -279,7 +311,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -324,8 +356,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918495861BF497D200D0243C /* UIWindow.swift in Sources */,
+				9184957F1BF497D200D0243C /* NSIndexPath.swift in Sources */,
+				918495851BF497D200D0243C /* UITextView.swift in Sources */,
+				918495801BF497D200D0243C /* NSRange.swift in Sources */,
+				918495841BF497D200D0243C /* UILabel.swift in Sources */,
+				918495821BF497D200D0243C /* String.swift in Sources */,
+				918495811BF497D200D0243C /* NSTimer.swift in Sources */,
+				918495871BF497D200D0243C /* MSHelper.swift in Sources */,
+				918495831BF497D200D0243C /* UIImageView.swift in Sources */,
 				EF8485B2D8BB9ACE132E029D8EA2B5E1 /* MSHelper-dummy.m in Sources */,
-				3585DD80694CCAFCEC831FE8332631C0 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45DF0471AA1403C217D80BE80EB508C3 /* MSHelper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -521,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 45DF0471AA1403C217D80BE80EB508C3 /* MSHelper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
