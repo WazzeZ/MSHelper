@@ -1,0 +1,6 @@
+framework module MSHelper {
+  umbrella header "MSHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

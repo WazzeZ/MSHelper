@@ -1,0 +1,14 @@
+PODS:
+  - MSHelper (0.1.0)
+
+DEPENDENCIES:
+  - MSHelper (from `../`)
+
+EXTERNAL SOURCES:
+  MSHelper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MSHelper: 03c1b13bde1260950098460628960f9cf4b6fab8
+
+COCOAPODS: 0.39.0
