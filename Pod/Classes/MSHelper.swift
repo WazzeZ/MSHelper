@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MSHelper: NSObject {
+public class MSHelper: NSObject {
     
-    class func directoryPath(seachPath: NSSearchPathDirectory) -> String? {
+    public static func directoryPath(seachPath: NSSearchPathDirectory) -> String? {
         let domainMark = NSSearchPathDomainMask.UserDomainMask
         if let dirPath = NSSearchPathForDirectoriesInDomains(seachPath, domainMark, true).first {
             return dirPath
@@ -18,7 +18,7 @@ class MSHelper: NSObject {
         return nil
     }
     
-    class func cacheDirectoryPath() -> String? {
+    public static func cacheDirectoryPath() -> String? {
         let cacheDirectory = NSSearchPathDirectory.CachesDirectory
         return directoryPath(cacheDirectory)
     }

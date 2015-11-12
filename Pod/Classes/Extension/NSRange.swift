@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension NSRange {
+public extension NSRange {
    
 }

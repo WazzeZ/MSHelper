@@ -8,69 +8,60 @@
 
 import Foundation
 
-extension String {
-    var length: Int {
+public extension String {
+    public var length: Int {
         return self.characters.count
     }
     
-    var objcLength: Int {
+    public var objcLength: Int {
         return self.utf16.count
     }
 }
 
-extension String {
-    var lastPathComponent: String {
-        
+public extension String {
+    public var lastPathComponent: String {
         get {
             return (self as NSString).lastPathComponent
         }
     }
-    var pathExtension: String {
-        
+    
+    public var pathExtension: String {
         get {
-            
             return (self as NSString).pathExtension
         }
     }
-    var stringByDeletingLastPathComponent: String {
-        
+    
+    public var stringByDeletingLastPathComponent: String {
         get {
             
             return (self as NSString).stringByDeletingLastPathComponent
         }
     }
-    var stringByDeletingPathExtension: String {
-        
+    
+    public var stringByDeletingPathExtension: String {
         get {
-            
             return (self as NSString).stringByDeletingPathExtension
         }
     }
-    var pathComponents: [String] {
-        
+    public var pathComponents: [String] {
         get {
-            
             return (self as NSString).pathComponents
         }
     }
     
-    func stringByAppendingPathComponent(path: String) -> String {
-        
+    public func stringByAppendingPathComponent(path: String) -> String {
         let nsSt = self as NSString
-        
         return nsSt.stringByAppendingPathComponent(path)
     }
     
-    func stringByAppendingPathExtension(ext: String) -> String? {
-        
+    public func stringByAppendingPathExtension(ext: String) -> String? {
         let nsSt = self as NSString
-        
         return nsSt.stringByAppendingPathExtension(ext)
     }
 }
 
-extension String {
-    func isEmail() -> Bool {
+public extension String {
+    public func isEmail() -> Bool {
         //        let emailRegex = "(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}\"@\"~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\\"@\"x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-\"@\"z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5\"@\"]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-\"@\"9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\"@\"-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegex)
@@ -78,7 +69,7 @@ extension String {
         return validate
     }
     
-    func isAbsoluteEmpty()-> Bool {
+    public func isAbsoluteEmpty()-> Bool {
         if self.isEmpty {
             return true
         }
@@ -89,7 +80,7 @@ extension String {
         return false
     }
     
-    func isPhoneNumber()throws -> Bool {
+    public func isPhoneNumber()throws -> Bool {
         if self.characters.count < 9 || self.characters.count > 10 {
             return false
         }
@@ -117,7 +108,7 @@ extension String {
         return false
     }
     
-    func getPhones()throws -> [String] {
+    public func getPhones()throws -> [String] {
         do {
             let detector = try NSDataDetector(types: NSTextCheckingType.PhoneNumber.rawValue)
             let inputRange = NSMakeRange(0, self.characters.count)

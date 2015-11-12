@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIImageView {
-    func setImage(newImage: UIImage?, animationDuration duration: NSTimeInterval, animationOption: UIViewAnimationOptions) {
+public extension UIImageView {
+    public func setImage(newImage: UIImage?, animationDuration duration: NSTimeInterval, animationOption: UIViewAnimationOptions) {
         if newImage == nil { return }
         
         UIView.transitionWithView(self,

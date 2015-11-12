@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension UIWindow {
-    func visibleViewController()-> UIViewController? {
+public extension UIWindow {
+    public func visibleViewController()-> UIViewController? {
         return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
     }
     
-    class func getVisibleViewControllerFrom(viewController: AnyObject?)-> UIViewController? {
+    public class func getVisibleViewControllerFrom(viewController: AnyObject?)-> UIViewController? {
         if let navigation = viewController as? UINavigationController {
             return UIWindow.getVisibleViewControllerFrom(navigation.visibleViewController)
         } else if let tabbar = viewController as?  UITabBarController {

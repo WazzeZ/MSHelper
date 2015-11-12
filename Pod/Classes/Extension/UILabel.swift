@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UILabel {
-    class func sizeOfText(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
+public extension UILabel {
+    public class func sizeOfText(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
         if text == nil || font == nil {
             return CGSizeZero
         }
@@ -24,7 +24,7 @@ extension UILabel {
         return label.frame.size
     }
     
-    class func sizeOfAttributedText(attributedText: NSAttributedString?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
+    public class func sizeOfAttributedText(attributedText: NSAttributedString?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
         if attributedText == nil || font == nil {
             return CGSizeZero
         }

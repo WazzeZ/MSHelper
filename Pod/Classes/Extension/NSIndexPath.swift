@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension NSIndexPath {
-    func isEqual(row row: Int, section: Int)-> Bool {
+public extension NSIndexPath {
+    public func isEqual(row row: Int, section: Int)-> Bool {
         return self.row == row && self.section == section
     }
 }

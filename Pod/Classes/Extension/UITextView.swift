@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UITextView {
-    class func sizeOfTextView(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode) -> CGSize {
+public extension UITextView {
+    public class func sizeOfTextView(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode) -> CGSize {
         if text == nil || font == nil {
             return CGSizeZero
         }

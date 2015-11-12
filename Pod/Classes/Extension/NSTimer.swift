@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension NSTimer {
-    class func schedule(delay delay: Double, task: dispatch_block_t) {
+public extension NSTimer {
+    public class func schedule(delay delay: Double, task: dispatch_block_t) {
         let delay = delay * Double(NSEC_PER_SEC)
         let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(time, dispatch_get_main_queue(), task)
