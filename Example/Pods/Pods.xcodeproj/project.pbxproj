@@ -22,6 +22,7 @@
 		918495851BF497D200D0243C /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957C1BF497D200D0243C /* UITextView.swift */; };
 		918495861BF497D200D0243C /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957D1BF497D200D0243C /* UIWindow.swift */; };
 		918495871BF497D200D0243C /* MSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184957E1BF497D200D0243C /* MSHelper.swift */; };
+		9184958B1BF4AB8900D0243C /* MSAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184958A1BF4AB8900D0243C /* MSAvatarImageView.swift */; };
 		EF8485B2D8BB9ACE132E029D8EA2B5E1 /* MSHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC951A5D9DC8336E10628C74AB3578E7 /* MSHelper-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		9184957C1BF497D200D0243C /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		9184957D1BF497D200D0243C /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		9184957E1BF497D200D0243C /* MSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSHelper.swift; sourceTree = "<group>"; };
+		9184958A1BF4AB8900D0243C /* MSAvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAvatarImageView.swift; sourceTree = "<group>"; };
 		AC951A5D9DC8336E10628C74AB3578E7 /* MSHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSHelper-dummy.m"; sourceTree = "<group>"; };
 		AF2B5BFD54A76D9042184823F90C8F48 /* Pods-MSHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -176,9 +178,18 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		918495891BF4AB7500D0243C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9184958A1BF4AB8900D0243C /* MSAvatarImageView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		AB34F264F692E81AF0604CE3F2297542 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				918495891BF4AB7500D0243C /* UIKit */,
 				918495751BF497D200D0243C /* Extension */,
 				9184957E1BF497D200D0243C /* MSHelper.swift */,
 			);
@@ -357,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				918495861BF497D200D0243C /* UIWindow.swift in Sources */,
+				9184958B1BF4AB8900D0243C /* MSAvatarImageView.swift in Sources */,
 				9184957F1BF497D200D0243C /* NSIndexPath.swift in Sources */,
 				918495851BF497D200D0243C /* UITextView.swift in Sources */,
 				918495801BF497D200D0243C /* NSRange.swift in Sources */,
