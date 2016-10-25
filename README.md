@@ -1,6 +1,6 @@
 # MSHelper
 
-[![CI Status](http://img.shields.io/travis/Tum/MSHelper.svg?style=flat)](https://travis-ci.org/Tum/MSHelper)
+[![CI Status](http://img.shields.io/travis/Tum/MSHelper.svg?style=flat)](https://travis-ci.org/WazzeZ/MSHelper)
 [![Version](https://img.shields.io/cocoapods/v/MSHelper.svg?style=flat)](http://cocoapods.org/pods/MSHelper)
 [![License](https://img.shields.io/cocoapods/l/MSHelper.svg?style=flat)](http://cocoapods.org/pods/MSHelper)
 [![Platform](https://img.shields.io/cocoapods/p/MSHelper.svg?style=flat)](http://cocoapods.org/pods/MSHelper)
