@@ -9,12 +9,12 @@
 import UIKit
 
 public extension UILabel {
-    public class func sizeOfText(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
+    public class func sizeOf(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
         if text == nil || font == nil {
-            return CGSizeZero
+            return CGSize.zero
         }
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.max))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
         label.numberOfLines = numberOfLines
         label.lineBreakMode = lineBreakMode
         label.font = font
@@ -24,12 +24,12 @@ public extension UILabel {
         return label.frame.size
     }
     
-    public class func sizeOfAttributedText(attributedText: NSAttributedString?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
+    public class func sizeOf(attributedText: NSAttributedString?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode, numberOfLines:Int) -> CGSize {
         if attributedText == nil || font == nil {
-            return CGSizeZero
+            return CGSize.zero
         }
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.max))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
         label.numberOfLines = numberOfLines
         label.lineBreakMode = lineBreakMode
         label.font = font

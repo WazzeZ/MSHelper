@@ -8,18 +8,18 @@
 
 import UIKit
 
-public class MSHelper: NSObject {
+open class MSHelper: NSObject {
     
-    public static func directoryPath(seachPath: NSSearchPathDirectory) -> String? {
-        let domainMark = NSSearchPathDomainMask.UserDomainMask
+    open static func directoryPath(_ seachPath: FileManager.SearchPathDirectory) -> String? {
+        let domainMark = FileManager.SearchPathDomainMask.userDomainMask
         if let dirPath = NSSearchPathForDirectoriesInDomains(seachPath, domainMark, true).first {
             return dirPath
         }
         return nil
     }
     
-    public static func cacheDirectoryPath() -> String? {
-        let cacheDirectory = NSSearchPathDirectory.CachesDirectory
+    open static func cacheDirectoryPath() -> String? {
+        let cacheDirectory = FileManager.SearchPathDirectory.cachesDirectory
         return directoryPath(cacheDirectory)
     }
 }

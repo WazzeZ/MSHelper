@@ -9,13 +9,13 @@
 import UIKit
 
 public extension UIImageView {
-    public func setImage(newImage: UIImage?, animationDuration duration: NSTimeInterval, animationOption: UIViewAnimationOptions) {
+    public func setImage(newImage: UIImage?, animationDuration duration: TimeInterval, animationOption: UIViewAnimationOptions) {
         if newImage == nil { return }
         
-        UIView.transitionWithView(self,
-            duration: duration,
-            options: animationOption,
-            animations: { self.image = newImage },
-            completion: nil)
+        UIView.transition(with: self,
+                          duration: duration,
+                          options: animationOption,
+                          animations: { self.image = newImage },
+                          completion: nil)
     }
 }

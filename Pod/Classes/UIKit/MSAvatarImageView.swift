@@ -9,16 +9,16 @@
 import UIKit
 
 public enum MSAvatarViewStyle {
-    case Circle
-    case Square
-    case RoundedSquare(cornerRadius: CGFloat)
+    case circle
+    case square
+    case roundedSquare(cornerRadius: CGFloat)
 }
 
-public class MSAvatarImageView: UIImageView {
-
-    public static var defaultStyle: MSAvatarViewStyle = .Circle
+open class MSAvatarImageView: UIImageView {
     
-    public var style: MSAvatarViewStyle! {
+    open static var defaultStyle: MSAvatarViewStyle = .circle
+    
+    open var style: MSAvatarViewStyle! {
         didSet {
             self.layoutSubviews()
         }
@@ -46,7 +46,7 @@ public class MSAvatarImageView: UIImageView {
         self.commonInit()
     }
     
-    private func commonInit() {
+    fileprivate func commonInit() {
         self.layer.masksToBounds = true
         
         if self.style == nil {
@@ -54,15 +54,15 @@ public class MSAvatarImageView: UIImageView {
         }
     }
     
-    override public func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         switch self.style! {
-        case .Circle:
+        case .circle:
             self.layer.cornerRadius = self.bounds.height / 2
-        case .Square:
+        case .square:
             self.layer.cornerRadius = 0
-        case .RoundedSquare(let cornerRadius):
+        case .roundedSquare(let cornerRadius):
             self.layer.cornerRadius = cornerRadius
         }
     }

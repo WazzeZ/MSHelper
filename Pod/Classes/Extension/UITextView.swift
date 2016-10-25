@@ -9,12 +9,12 @@
 import UIKit
 
 public extension UITextView {
-    public class func sizeOfTextView(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode) -> CGSize {
+    public class func sizeOf(text:String?, font:UIFont?, width:CGFloat, lineBreakMode:NSLineBreakMode) -> CGSize {
         if text == nil || font == nil {
-            return CGSizeZero
+            return CGSize.zero
         }
         
-        let textView = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.max))
+        let textView = UITextView(frame: CGRect(x: 0, y: 0, width: width, height: CGFloat.greatestFiniteMagnitude))
         textView.font = font
         textView.text = text
         textView.sizeToFit()

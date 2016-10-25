@@ -13,7 +13,7 @@ public extension UIWindow {
         return UIWindow.getVisibleViewControllerFrom(self.rootViewController)
     }
     
-    public class func getVisibleViewControllerFrom(viewController: AnyObject?)-> UIViewController? {
+    public class func getVisibleViewControllerFrom(_ viewController: AnyObject?)-> UIViewController? {
         if let navigation = viewController as? UINavigationController {
             return UIWindow.getVisibleViewControllerFrom(navigation.visibleViewController)
         } else if let tabbar = viewController as?  UITabBarController {
