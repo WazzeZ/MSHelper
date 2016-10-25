@@ -5,13 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/MSHelper.svg?style=flat)](http://cocoapods.org/pods/MSHelper)
 [![Platform](https://img.shields.io/cocoapods/p/MSHelper.svg?style=flat)](http://cocoapods.org/pods/MSHelper)
 
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-- iOS 8.0+
-- Xcode 7.1+
+- Swift 3.0
+- iOS 9.0+
+- Xcode 8.0+
 
 ## Installation
 
